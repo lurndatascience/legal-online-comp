@@ -1,0 +1,10 @@
+db:
+  url: "${DATABASE_URL}"
+  username: "${USER}"
+  password: "${PASSWORD}"
+  host: "${HOST}"
+  port: "${PORT}"
+  name: "${DB_NAME}"
+
+s3:
+  bucketname: "${BUCKET_NAME}"

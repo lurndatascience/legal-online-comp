@@ -1,0 +1,8 @@
+docker run --name langfuse \
+-e DATABASE_URL=postgresql://b2b-user:test-password@localhost:5432/b2b-hub-db \
+-e NEXTAUTH_URL=http://localhost:3000 \
+-e NEXTAUTH_SECRET=DBET6bcyPsf+YYii51o0ft04aSRxpj6+1SOLvfAWY8o= \
+-e SALT=pr/aFhEOFWaWwmBaDMdGFUzaoACaJZiywJGq2P+Lt5k= \
+-p 3000:3000 \
+-a STDOUT \
+ghcr.io/langfuse/langfuse:latest
